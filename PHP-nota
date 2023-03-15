@@ -1,14 +1,62 @@
-<?php 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Confira se está aprovado</title>
+	<style>
+    
+    body {
+color: white ;
+font-family: Arial, helvetica, sans-serif;
+background: linear-gradient(to right, red, black);
+font-size: x-large;
+text-align: center;
+    }
+    .box {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgba(0, 0, 0, 0.5);
+padding: 30px;
+border-radius: 15px;
+    }
+
+   a{
+text-decoration: none;
+color: white;
+border: 3px solid red;
+border-radius: 10px;
+padding: 10px;
+   }
+
+	</style>
+</head>
+<body>
+
+      <h1>Bem-Vindo</h1>
+      <h2>Praticando PHP</h2>
+      
+    <div class="box">
+     
+    <?php 
 $N= isset($_GET['nota'])? $_GET['nota']: "não informado";
 
 if ($N >= 7) {
-	echo "aprovado";
+	 echo "aprovado";
 }
 elseif ($N < 7 and $N >= 5) {
-	echo "recuperação";
-}
+	 echo "recuperação";
+} 
  else {
-	echo "reprovado";
+	 echo "reprovado";
 }
 
 ?>
+
+    </div>
+    <a href="Praticando-PHP-notas.html">Voltar</a>
+
+</body>
+</html>
