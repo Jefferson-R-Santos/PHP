@@ -39,7 +39,7 @@ padding: 10px;
       <h2>Praticando PHP</h2>
       
     <div class="box">
-     <input name="nota" id="nota1" type="number">
+     <input type="GET" name="nota" id="nota1" type="number">
      <label for="nota">Digite sua nota:</label>
     </div>
 
