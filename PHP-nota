@@ -1,3 +1,14 @@
-<?PHP 
+<?php 
+$N= isset($_GET['nota'])? $_GET['nota']: "não informado";
+
+if ($N >= 7) {
+	echo "aprovado";
+}
+elseif ($N < 7 and $N >= 5) {
+	echo "recuperação";
+}
+ else {
+	echo "reprovado";
+}
 
 ?>
